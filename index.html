@@ -1,57 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>getkcal</title>
-  <link href="assets/css/styles.css" rel="stylesheet" />
+  <title>Getkcal - Sua calculadora de calorias !</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="assets/images/logo.svg" alt="getkcal" />
-    </header>
+  <header>
+    <img src="imagens/logo.svg" alt="Logo Getkcal">
+  </header>
 
-    <div class="content">
+  <main>
+    <section>
       <form id="form">
-        <div class="form-group">
-          <label for="gender">Seu sexo</label>
-          <select id="gender">
-            <option value="male">Masculino</option>
-            <option value="female">Feminino</option>
+        <div class="grupo-form">
+          <label for="genero">Seu Sexo</label>
+          <select id="genero">
+            <option value="masc">Masculino</option>
+            <option value="fem">Feminino</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="age">Sua idade</label>
-          <input type="number" id="age" />
+
+        <div class="grupo-form">
+          <label for="idade">Sua Idade</label>
+          <input type="number" id="idade">
         </div>
-        <div class="form-group">
-          <label for="weight">Seu peso</label>
-          <input type="number" id="weight" />
+
+        <div class="grupo-form">
+          <label for="peso">Seu Peso</label>
+          <input type="number" id="peso">
         </div>
-        <div class="form-group">
-          <label for="height">Sua altura</label>
-          <input type="number" id="height" />
+
+        <div class="grupo-form">
+          <label for="altura">Sua Altura</label>
+          <input type="number" id="altura">
         </div>
-        <div class="form-group">
-          <label for="activity_level">Seu nível de atividade física</label>
-          <select id="activity_level">
+
+        <div class="grupo-form">
+          <label for="nivel-ativ">Seu Nível de Atividade Física</label>
+          <select id="nivel-ativ">
             <option value="1.2">Sedentário</option>
-            <option value="1.375">Pouca atividade</option>
-            <option value="1.55">Atividade moderada</option>
-            <option value="1.725">Atividade intensa</option>
-            <option value="1.9">Atividade muito intensa</option>
+            <option value="1.375">Pouca Atividade</option>
+            <option value="1.55">Atividade Moderada</option>
+            <option value="1.725">Atividade Intensa</option>
+            <option value="1.9">Atividade Muito Intensa</option>
           </select>
         </div>
 
-        <div class="form-group">
-          <button type="submit">Calcular!</button>
+        <div class="grupo-form">
+          <button type="submit">Calcular</button>
         </div>
-      </form>
-      <div class="result-container" id="result"></div>
-    </div>
-  </div>
 
-  <script src="assets/js/script.js" type="text/javascript"></script>
+      </form>
+      <div class="container-result" id="result"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
